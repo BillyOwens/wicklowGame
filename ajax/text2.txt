@@ -1,0 +1,10 @@
+Asteroids is an arcade space shooter released in November 1979 by Atari, Inc. and designed by Lyle Rains, Ed Logg, and Dominic Walsh. 
+The player controls a spaceship in an asteroid field which is periodically traversed by flying saucers. 
+The object of the game is to shoot and destroy asteroids and saucers while not colliding with either or being hit by the saucers' counter-fire. The game becomes harder as the number of asteroids increases.
+Asteroids was one of the first major hits of the golden age of arcade games. The game sold over 70,000 arcade cabinets and proved both popular with players and influential with developers. It has since been ported to multiple platforms.
+
+The objective of Asteroids is to shoot asteroids and flying saucers for points. When an asteroid is shot, it breaks up into smaller pieces, depending on the size of the asteroid. A giant asteroid will split into 2 medium asteroids, and each of those medium asteroids split into another 2 smaller asteroids, with the smaller asteroids finally disappearing when shot. 
+Smaller asteroids are also worth more points. 
+Two flying saucers appear periodically on the screen; the "big saucer" shoots randomly and poorly, while the "small saucer" fires frequently at the ship. After reaching a score of 40,000, only the small saucer appears.
+
+Asteroids has been ported to multiple platforms, including much of Atari's hardware (Atari 2600 and 8-bit computers in 1981, Atari 7800 in 1987, Atari Lynx in 1994) and many other platforms, such as the PlayStation, Nintendo 64, Microsoft Windows, and the Game Boy Color.

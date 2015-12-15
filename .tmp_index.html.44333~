@@ -1,0 +1,668 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Team Name Here</title>
+<link href="jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="themes/myApp.min.css" />
+<link href="css/newCSS.css" rel="stylesheet" type="text/css"/>
+
+<script src="jquery-1.5.min.js" type="text/javascript"></script>
+<script src="js/jquery.wikiblurb.js" type="text/javascript"></script>
+
+
+
+<!--START OF custom event handlers for JQuery Handlers -->
+<script type="text/javascript">
+<!--
+//global variable for question 4, type is inferred from declaration
+var page4ListCounter = 0;
+
+//call setup pages to add event handlers to buttons (called from buttonHandlers.js)
+ setupPages();
+-->
+</script>
+<!--END OF custom event handlers for JQuery Handlers -->
+<script src="jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<script src="js/code.js" type="text/javascript"></script>
+<script src="js/buttonHandlers.js" type="text/javascript"></script>
+<script src="js/db.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+</head> 
+<!-----Beginning of Body Content ------->
+
+<body onLoad="setupPages();"> 
+
+<!----Beginning of page one ------>
+
+<div data-role="page" id="page" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="">
+	<div data-role="header" align="center">			<!-- this data theme will do whole page only needed once -->
+		
+		
+		
+		
+		<!--<h1>@MarkBill mobile app
+			<a id="page2Text"></a>-->
+				
+	<!--<div data-role="fieldcontain">
+            <label for="searchinput1">
+                Search App
+            </label>
+            <input name="" id="searchinput1" placeholder="" value="" type="search">
+        </div>
+       -->
+       
+	</div>
+		
+		<div data-role="content" data-theme="e" align="center">
+			
+			<p><img src="images/foto1.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"
+			></a></p></h1>
+			
+			</div>
+	
+	<div data-role="content" data-theme="e">
+		
+		
+		
+		 
+		 
+		 	<p id="testDate">Click the button below to display the current date and time</p>
+			
+	
+	<button type="button"  onclick="displayDate()">Display Date/Time
+		</button>
+	
+	
+		<!--<p><img src="images/vdv.jpg" width"240" height"180"  align="centre" style="position:relative; top:50%; left:15%; margin-left: -18px; margin-top: -18px"></p></h1>
+	-->
+		
+		<ul data-role="listview" >
+			<li><a href="#page2">Page 2 - </a></li>
+            <li><a href="#page3">Page 3 - </a></li>
+			<li><a href="#page4">Page 4 - </a></li>
+         	<li><a href="#page5">Page 5 - </a></li>
+         	<li><a href="#page6">Page 6 - </a></li>
+		</ul>		
+	</div>
+	
+	<div>
+<!--<div>
+<p> Form and validation sample </p>
+<form name = "myform">
+<p>enter user name <input type="text" name="username"><br /> enter password  <input type="password" name="pword">
+<input type="button" value="Log In" name="Submit" onclick= "validate()">
+</p>
+</form>
+</div>
+
+<!--------------------------- PUT IN YOUR EMAIL BELOW ------------------------------------>
+
+<a href="mailto:info@n3xtg3nov8ion.com" class="ui-btn-left ui-btn ui-btn-corner-all ui-shadow 
+ui-btn-up-a" data-theme="b"> Contact Us </a>
+</br>
+
+
+
+<!------------------- Twitter Info ------------------------------------------------------>
+
+<!--
+<a href="https://twitter.com/intent/tweet?original_referer=&amp;screen_name=webbdevv&amp;
+tw_p=tweetbutton" class="btn ui-btn-right ui-btn ui-btn-corner-all ui-shadow ui-btn-up-a" 
+id="b" target="_blank" data-theme="a">
+<span class="ui-btn-inner ui-btn-corner-all">
+<span class="ui-btn-text"><i>
+</i><span class="label" id="l">Tweet to<b>@webDevv</b></span>	
+</span>
+</span>
+</a>
+
+<a id="follow-button" target="_blank" class="btn ui-btn ui-btn-corner-all ui-shadow ui-btn-up-a" title="Follow @WebbDevv on Twitter" href="https://twitter.com/intent/follow?original_referer=&amp;region=follow_link&amp;screen_name=webbdevv&amp;tw_p=followbutton&amp;variant=2.0" data-theme="a">
+<span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">
+<i></i><span class="label" id="l">Follow <b>@WebDevv</b></span></span></span></a>
+
+-->
+
+<!--  CHANGE THE NAME AT BOTTOM OF PAGE HERE ------------------------------------------------>
+
+</div>
+<div data-theme="i">
+	
+<h4><p>&copy; N3xt G3nov8ion</p></h4>
+	</div>
+	
+	
+	
+<!---------------------beginning of navbar / CHANGE THE WORDS IN WHITE TO APPEAR ON BUTTONS -->
+		
+		<div data-role="footer" data-position="fixed" data-id="footer" data-theme="e">
+			
+			
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">2</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">C3</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">Something</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Vids</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
+			</div><!--end of navbar-->
+		</div><!--end of data-role footer-->
+</div>
+
+
+
+<!------------------------Beginning of page 2-------------------------------------------->
+
+		
+	<div data-role="page" id="page2" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="b">
+	
+	
+	
+	<div data-role="header" id="page2Header" data-theme="a">
+		<h1>Title 1</h1>
+		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
+	</div>
+	
+		
+	<div data-role="content" data-theme="b">			<!-- this is where the back board lies -->
+		
+		<div id="userLocation"></div>
+		
+    	<h1 style="text-align:center;">
+    	<p><a href="sms:0868620488, 0868620499, 000340034"> <img src="images/foto1.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"
+			></a></p>
+	
+		<div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax1">
+          	
+          	<a id="testingAjax1" data-role="button" data-theme="g" data-collapsed="true"  onclick="text1()">How to treat a burn</a>
+          </div>
+    
+    <!--      	
+		<a class="twitter-timeline"  href="https://twitter.com/webbdevv"  data-widget-id="407647530051043329">Tweets by @WebDevv</a>
+		
+		-->
+		
+	</div>
+	
+	<!--<div>
+	<h1 style="text-align:center;">
+            	<p><img src="images/foto2.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+            	
+            	 	<a id="testingAjax2" data-role="button" data-theme="b" data-collapsed="true"  onclick="text2()">Volcanoes </a>
+         
+          </div>-->
+	
+<div><h4><p>&copy; N3xt G3nov8ion 2013</p></h4></div>
+
+	<div data-role="footer" data-position="fixed" data-id="MarkBillfooter" data-theme="e">
+		<!--beginning of navbar--><div data-role="navbar">
+			<ul>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">2</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">C3</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">Something</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Vids</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
+			</div><!--end of navbar-->
+		</div><!--end of data-role footer-->
+</div>
+
+<!------------------------beginning of page 3------------------------------------------------>
+
+<div data-role="page" id="page3" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="b">
+	<div data-role="header" id="page3Header" data-theme="a">
+		<h1> Title "2"</h1>
+		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
+	</div>
+	
+	
+	<!--<div data-role="content" data-theme="">	
+		<ul data-role="listview" id="page3ExampleList" >
+        </ul>		
+        <a id="page3ListButton" data-role="button" data-theme="b">Fantasty Football Team</a> -->	
+            	
+         
+        
+            	
+          <div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax2">
+          	<h3>Title</h3>
+          	<p><img src="images/foto2.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px">
+          		<!--<iframe width="80%" height="315" src="https://www.youtube.com/embed/Ih6ApEBmHic" frameborder="0" allowfullscreen></iframe>-->
+			
+            <a id="testingAjax2" data-role="button" data-theme="b" data-collapsed="true"  onclick="text2()">How to title</a></div>
+         	
+          	<!--<a id="testingAjax3" data-role="button" data-theme="b" data-collapsed="true"  onclick="text3()">Girl Science</a>->
+          </div>-->
+         
+            		
+	<div>
+		<h4><p>&copy; N3xt G3nov8ion 2013</p></h4>
+	</div>
+	
+	
+	<div data-role="footer" data-position="fixed" data-id="footer" data-theme="e">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">2</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">C3</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">Something</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Vids</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
+			</div><!--end of navbar-->
+		</div><!--end of data-role footer-->
+	
+</div>
+
+<!------------------------beginning of page 4--------->
+
+<div data-role="page" id="page4" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="b">
+	<div data-role="header" data-theme="a">
+		<h1>Contact List</h1>
+		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
+	</div>
+	
+	<div data-role="content" data-theme="">
+		
+    	<h1 style="text-align:center;">
+    	<p><img src="images/foto3.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		 
+		  	<a id="testingAjax3" data-role="button" data-theme="b" data-collapsed="true"  onclick="text3()">Text 3 button </a>
+         
+		 
+      <!-- <div id="profile">
+       	<input type="button" value="Facebook Profile" onclick="nickFB()">
+       	 </div>  
+
+	-->
+	<!--<div data-role="content" data-theme="b">-->
+	 <!--this is the text that will change in the page3testAjax Button function based on w3schools -->
+        <!-- <center><a id="page3Text"  ><h4>What was the name of the US project to build the Atomic Bomb in WW2 ?</h4></a></center>-->
+         <!--this sample ajax change text is taken from w3schools-->
+         <!--<a id="page3testAjaxButton"  data-role="button" data-theme="b"> Click for Answer</a>
+         
+         </div>-->
+         
+	
+	<!--<div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax3">
+          	<h3>Atomic Bomb</h3>
+          	
+          	<p><img src="images/foto5.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		
+          	<a id="testingAjax5" data-role="button" data-theme="b" data-collapsed="true"  onclick="text5()">Nuclear Bomb</a>
+       </div>-->
+	
+	<div>
+          	
+          	<!--<label for="basic">List Content:</label>
+    <input type="text" id="page4TextInput" value="Please leave a comment..."/>
+<a id="page4ListButton" data-role="button" data-theme="b">Add text to list</a>	
+			<ul data-role="listview" id="page4InputList">
+     </ul>-->
+          	
+          </div>
+	
+<!--<div data-role="content" id="tweetlist">
+</div>
+<script>
+$.getJSON("https://api.twitter.com/1/statuses/user_timeline/webbdevv.json?count=30&include_rts=1&callback=?", function(data) {
+ //$("#twitter").html(data[0].text);
+//$("#twitter").append('<p>"'+ data.status.id+'"</p>');
+	$.each(data,function(i,result){
+//$("#twitter").append('<div><img src="'+result.user.profile_image_url+'" alt="" height="42" width="42" />');
+	$("#twitter").append('<p>@"'+result.user.name+'"</p>');
+	$("#twitter").append('<p>"'+result.text+'"</p>');
+	$("#twitter").append('</div>');
+	//alert(i);
+		});
+    });
+</script>
+<div id="twitter" data-role="listview"></div>	   
+   
+   
+  -->
+  
+  
+  
+   <br />
+   <br />
+  
+  
+	</div>
+	
+	
+	<div>
+		<h4><p>&copy; N3xt Genov8ion 2013</p></h4>
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-id="" data-theme="e">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">2</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">C3</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">Something</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Vids</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
+			</div><!--end of navbar-->
+		</div><!--end of data-role footer-->
+	
+</div>
+
+<!------------------------beginning of page 5---------------------------------------->
+
+
+
+<div data-role="page" id="page5" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="b">
+	
+	
+	
+	
+	<div data-role="header" data-theme="a">
+		<h1>VIdeos </h1>
+		<center></center><iframe width="80%" height="315" src="https://www.youtube.com/embed/pPsEqcOb2ZY" frameborder="0" allowfullscreen></iframe></center>
+</div>
+<div data-role="content" data-theme="">
+		
+    	<h1 style="text-align:center;">
+    		
+    	<p><img src="images/foto4.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		 
+		  	<a id="testingAjax4" data-role="button" data-theme="e" data-collapsed="true"  onclick="text4()">Button 4 </a>
+         
+		
+	</div>
+
+	
+		
+		  
+    <!--<source src="horse.ogg" type="audio/ogg"></source>-->
+    
+    	<!--		Google News Plugin 
+    		
+    			<iframe src="http://www.google.com/uds/modules/elements/newsshow/iframe.html?format=300x250"
+        	frameborder="0" width="300" height="250"
+        	marginwidth="0" marginheight="0">
+			</iframe>
+  					-->
+  					
+  					<div id="article"></div>
+<div id="otherWikiArticle"></div>
+   
+		
+		
+  				
+	
+	
+	<div>
+		<h4><p>&copy; n3xt G3nov8ion 2015</p></h4>
+	</div>
+	
+	
+	
+	<div data-role="footer" data-position="fixed" data-id="" data-theme="e">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">2</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">C3</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">Something</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Vids</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
+			</div><!--end of navbar-->
+		</div><!--end of data-role footer-->
+	
+	
+</div>
+<!--Twitter Embedded Timeline js script-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+</body>
+</html>
+
+<!------------------------beginning of page 6--------->
+
+<!------------------------beginning of page 6----
+	
+	
+	
+	
+																		----->
+	
+	
+	
+
+<div data-role="page" id="page6" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="u">
+	
+	
+	
+	<div data-role="header" data-theme="u">
+		<h1>Credits</h1>
+		
+		<a href="#page" data-icon="home" data-iconpos="notext">home</a>
+		<a href="https://www.expedia.co.uk/Flights" 
+		data-icon="gear" data-theme="u" class="ui-btn-right">Link to somewhere</a>
+	
+		
+		</div>
+		
+	
+	<div data-role="content" data-theme="">
+		
+	
+	<h1 style="text-align:center;">
+    	<p><img src="images/foto12.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		
+	</div>
+	
+	<!--<div id="userLocation" data-theme="u"></div>-->
+	
+	
+	
+		<div align="center">
+			
+			<h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2411.563832864714!2d-6.157332684654409!3d52.81220077987056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867c14e09c15e63%3A0x39ea7e7df7da5a78!2sArklow+Business+Enterprise+Centre!5e0!3m2!1sen!2sie!4v1450101865102" 
+				width="80%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</h2>	
+				
+		
+			<font color="#F70810;">		
+		<p> Arklow Business Centre<br>
+			<br> Kilbride Industrial Estate
+			<br>Arklow,
+			Wicklow,
+			</p></font>
+	
+	</div>
+	
+	<div> 
+				<p><textarea id="textbox" style="width:350px; height:150px"></textarea></p>
+  <p><button type="button" id="button" onclick="startFetch(100, 500)">
+    Fetch random Wikipedia extract</button></p>
+    
+				</div>
+
+		
+	
+	<div>
+		<font color="#F70810;"><p>&copy; Special Thanks to our Partners in the Wicklow Partnerships</p></h4>
+		<p><img src="images/WicklowPartnership.jpg" width"80%" height""  align="center"></p></font>
+		
+		<h4><p>&copy; N3xt G3nov8ion 2015</p></h4>
+	</div>
+	
+	
+	<div data-role="footer" data-position="fixed" data-id="" data-theme="e">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">2</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">C3</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">Something</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Vids</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+				
+				
+				
+			</ul><!--end of list for navbar-->
+			</div><!--end of navbar-->
+		</div><!--end of data-role footer-->
+	
+	
+</div>
+<!--Twitter Embedded Timeline js script-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- <script>
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(53.315238, -6.272345), // New York
+
+                    // How y17 would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#1C705B"		}		]	}	]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+            }
+        </script>
+-->
+
+<!--Include file for button handlers -->
+
+
+
+<!--END OF Include file for button handlers -->
+
+<script>
+
+if (navigator && navigator.geolocation) {
+
+	navigator.geolocation.getCurrentPosition(userLocated, locationError);
+
+} else {
+	error('positioning not supported.');
+}
+
+
+function userLocated(position) {
+	var lat = position.coords.latitude;
+	var long = position.coords.longitude;
+	var locateTime = new Date(position.timestamp);
+	var locationDiv = document.getElementById("userLocation");
+	locationDiv.innerHTML = "Your Location at time: " + locateTime + " is Lat: " + lat + " Long: " + long; 
+}
+
+function locationError(error) {
+	var locationDiv = document.getElementById("userLocation");
+	locationDiv.innerHTML = "Cannot Locate You due to the following error: " + error.code + " Message: " + error.message;
+	//alert(error.code);
+}
+
+</script>
+
+<script type="text/javascript">
+
+    var textbox = document.getElementById("textbox");
+    var button = document.getElementById("button");
+    var tempscript = null, minchars, maxchars, attempts;
+
+    function startFetch(minimumCharacters, maximumCharacters, isRetry) {
+      if (tempscript) return; // a fetch is already in progress
+      if (!isRetry) {
+        attempts = 0;
+        minchars = minimumCharacters; // save params in case retry needed
+        maxchars = maximumCharacters;
+        button.disabled = true;
+        button.style.cursor = "wait";
+      }
+      tempscript = document.createElement("script");
+      tempscript.type = "text/javascript";
+      tempscript.id = "tempscript";
+      tempscript.src = "http://en.wikipedia.org/w/api.php"
+        + "?action=query&generator=random&prop=extracts"
+        + "&exchars="+maxchars+"&format=json&callback=onFetchComplete&requestid="
+        + Math.floor(Math.random()*999999).toString();
+      document.body.appendChild(tempscript);
+      // onFetchComplete invoked when finished
+    }
+
+    function onFetchComplete(data) {
+      document.body.removeChild(tempscript);
+      tempscript = null
+      var s = getFirstProp(data.query.pages).extract;
+      s = htmlDecode(stripTags(s));
+      if (s.length > minchars || attempts++ > 5) {
+        textbox.value = s;
+        button.disabled = false;
+        button.style.cursor = "auto";
+      } else {
+        startFetch(0, 0, true); // retry
+      }
+    }
+
+    function getFirstProp(obj) {
+      for (var i in obj) return obj[i];
+    }
+
+    // This next bit borrowed from Prototype / hacked together
+    // You may want to replace with something more robust
+    function stripTags(s) {
+      return s.replace(/<\w+(\s+("[^"]*"|'[^']*'|[^>])+)?>|<\/\w+>/gi, "");
+    }
+    function htmlDecode(input){
+      var e = document.createElement("div");
+      e.innerHTML = input;
+      return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+  </script>
+  
+  <script type="text/javascript">
+
+$(document).ready(function(){
+    
+    $('#article').wikiblurb();
+    
+    $('#otherWikiArticle').wikiblurb({
+	wikiURL: "http://football.wikia.com/",
+	apiPath: '',
+	section: 0,
+	page: 'football',
+	removeLinks: false,	    
+	type: 'text',
+	customSelector: '',
+        callback: function() {
+            console.log('Data Loaded...');
+        }
+    });
+});
+
+</script>
+
+
+</body> 
+</html>
